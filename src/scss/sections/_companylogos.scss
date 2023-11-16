@@ -1,0 +1,17 @@
+.logos {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 75px;
+
+
+        @media (min-width: 998px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 60px;
+        }
+    }
+    
+}

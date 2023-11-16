@@ -1,0 +1,57 @@
+.features {
+    .container {
+        display: grid;
+        border: 2px solid #DAD9D3;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:    "title title"
+                                "b-advice startup "
+                                "finance risk";
+        gap: 50px;       
+        padding: 50px;
+
+        @media (min-width: 996px) {
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-areas:    "title b-advice startup"
+                                    "title finance risk";
+            gap: 70px;       
+            padding: 85px;
+        }
+
+        .section-title{
+            grid-area: title;
+            padding: 30px;
+
+            h2 {
+                margin-bottom: 30px;
+            }
+
+            .btn-yellow {
+                padding-left: 40px;
+                padding-right: 40px;
+
+                @media (min-width: 996px) {
+                    padding-left: 60px;
+                    padding-right: 60px;
+                }
+            }
+        }
+
+        .icon-info {
+            .business-advice { 
+                grid-area: b-advice;
+            }
+
+            .startup-business {
+                grid-area: startup;
+            }
+
+            .financial-advice {
+                grid-area: finance;
+            }
+
+            .risk-management {
+                grid-area: risk;
+            }            
+        }
+    }
+}

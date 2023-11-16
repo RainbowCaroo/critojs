@@ -1,0 +1,42 @@
+.team {
+    background-color: #F9D783;
+
+    .container {
+        padding: 40px;
+
+        .meet-our-team {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+
+            @media (min-width: 768px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media (min-width: 998px) {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+
+            .team-members {
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    padding-bottom: 30px;
+                }
+
+                h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                    padding-top: 10px;
+                }               
+            }
+        }
+
+        .center-content {
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+    }
+}
