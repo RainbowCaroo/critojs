@@ -8,6 +8,10 @@ html, body {
   line-height: 1.5;
 }
 
+.background-color {
+  background-color: #F0EFE9;
+}
+
 .wrapper-grid {
   height: 100vh;
   display: grid;
@@ -855,7 +859,7 @@ header .container .mainmenu .btn-login {
 }
 .article-news .container .center-content {
   margin-top: 50px;
-  margin-bottom: 90px;
+  padding-bottom: 90px;
 }
 
 .newsletter {
@@ -1046,6 +1050,48 @@ header .container .mainmenu .btn-login {
 .map img {
   width: 100%;
   height: auto;
+}
+
+.news-articles {
+  background-color: #F0EFE9;
+  position: relative;
+  z-index: 0;
+}
+.news-articles .background-lines-left {
+  display: none;
+}
+@media (min-width: 770px) {
+  .news-articles .background-lines-left {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+.news-articles .container {
+  justify-content: center;
+  align-items: center;
+}
+.news-articles .container .content {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+.news-articles .container .content h1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 15px;
+}
+@media (min-width: 768px) {
+  .news-articles .container .content h1 {
+    font-size: 56px;
+  }
+}
+.news-articles .container .content a {
+  color: #191919;
+  text-decoration: none;
+  padding: 0px 10px;
 }
 
 .footer-info {
