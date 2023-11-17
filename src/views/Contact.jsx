@@ -9,7 +9,7 @@ import Footer from '@components/Footer'
 
 const Contact = () => {
   return (
-    <div className='wrapper.grid'>
+    <div className='wrapper-grid'>
         <Header />
         <main>
             <Connect />

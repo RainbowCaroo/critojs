@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import WhiteSwirlRight from '@images/white-swirl-right.svg'
 import WhiteLogo from '@images/logotype-white.svg'
 
@@ -10,9 +11,9 @@ const Footer = () => {
             <div className="container">
                 <div className="logo-and-info column">
                     <div>
-                        <a href="index.html">
+                        <Link to="/">
                             <img src={WhiteLogo} alt="crito logotype" />
-                        </a>
+                        </Link>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptas voluptates! Voluptates laborum nam ratione minus necessitatibus, iure praesentium.</p>
                 </div>
@@ -51,10 +52,10 @@ const Footer = () => {
             <div className="container">
                 <p>&#169 2023 Crito - Consulting Company Inc. All Rights Reserved.</p>
                 <div className="socialmedia-bar">
-                    <a href="#" target="_blank"><i className="fa-brands fa-facebook"></i></a>
-                    <a href="#" target="_blank"><i className="fa-brands fa-x-twitter"></i></a>
-                    <a href="#" target="_blank"><i className="fa-brands fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i className="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i className="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i className="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
         </footer>

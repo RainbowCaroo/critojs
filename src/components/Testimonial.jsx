@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Stars from '@images/stars.svg'
 import Cassandra from '@images/cassandra-warren.png'
 import Amanda from '@images/amanda-tulling.png'
@@ -48,7 +49,7 @@ const Testimonial = () => {
                 </div>
             </div>
             <div className="center-content">
-                <a className="btn-black" href="reviews.html">All Reviews <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <Link className="btn-black" to="/reviews">All Reviews <i className="fa-solid fa-arrow-up-right-from-square"></i></Link>
             </div>
         </div>
     </section>

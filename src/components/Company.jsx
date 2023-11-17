@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Samantha from '@images/samantha-brown.png'
 import WhiteSwiggle from '@images/image/white-swiggle.svg'
 
@@ -24,7 +25,7 @@ const Company = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis quas assumenda esse obcaecati? Ex esse error voluptates iure vel totam eos.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet</p>
                 <div className="links">
-                    <a className="btn-black" href="services.html">Learn More <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <Link className="btn-black" to="/service">Learn More <i className="fa-solid fa-arrow-up-right-from-square"></i></Link>
                     <a className="btn-transparent" href="#" target="_blank"><i className="fa-solid fa-play"></i></a>
                     <a className="link" href="#">Intro Video</a>
                 </div>

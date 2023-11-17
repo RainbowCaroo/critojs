@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Handshake from '@images/icon-handshake.svg'
 import Lightbulb from '@images/icon-lightbulb.svg'
 import Stocks from '@images/icon-stocks.svg'
@@ -11,7 +12,7 @@ const Features = () => {
             <div className="section-title">
                 <p>Features</p>
                 <h2>Our Accounting is trusted by thousand of companies</h2>
-                <div className="center-content"><a className="btn-yellow" href="news.html">Learn More <i className="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                <div className="center-content"><Link className="btn-yellow" to="/news">Learn More <i className="fa-solid fa-arrow-up-right-from-square"></i></Link></div>
             </div>
             <div className="icon-info">
                 <div className="business-advice">

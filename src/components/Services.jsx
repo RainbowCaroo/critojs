@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Swirl from '@images/long-white-swirl-right.svg'
 import Line from '@images/icon-line.svg'
 
@@ -17,7 +18,7 @@ const Services = () => {
                         <img src={Line} alt="Icon of a line" />
                         <h3>Business Advice</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                        <a className="btn-black" href="#"><i className="fa-solid fa-arrow-right"></i></a>
+                        <Link className="btn-black" to="#"><i className="fa-solid fa-arrow-right"></i></Link>
                     </div>
                 </div>
                 <div className="icon-info startup">
@@ -25,7 +26,7 @@ const Services = () => {
                         <img src={Line} alt="Icon of a line" />
                         <h3>Startup Business</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                        <a className="btn-transparent" href="#"><i className="fa-solid fa-arrow-right"></i></a>
+                        <Link className="btn-transparent" to="#"><i className="fa-solid fa-arrow-right"></i></Link>
                     </div>
                 </div>
                 <div className="icon-info">
@@ -33,7 +34,7 @@ const Services = () => {
                         <img src={Line} alt="Icon of a line" />
                         <h3>Financial Advice</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                        <a className="btn-black" href="#"><i className="fa-solid fa-arrow-right"></i></a>
+                        <Link className="btn-black" to="#"><i className="fa-solid fa-arrow-right"></i></Link>
                     </div>
                 </div>
                 <div className="icon-info">
@@ -41,12 +42,12 @@ const Services = () => {
                         <img src={Line} alt="Icon of a line" />
                         <h3>Risk Management</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                        <a className="btn-black" href="#"><i className="fa-solid fa-arrow-right"></i></a>
+                        <Link className="btn-black" to="#"><i className="fa-solid fa-arrow-right"></i></Link>
                     </div>
                 </div>
             </div>
             <div className="center-content">
-                <a className="btn-transparent" href="services.html">Browse Services <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <Link className="btn-transparent" to="/service">Browse Services <i className="fa-solid fa-arrow-up-right-from-square"></i></Link>
             </div>
         </div>
     </section>

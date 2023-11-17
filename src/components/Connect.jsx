@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Swirl from '@images/long-white-swirl-left.svg'
 
 const Connect = () => {
@@ -8,8 +9,8 @@ const Connect = () => {
         <div className="container">
             <div className="content">
                 <nav>
-                    <a href="index.html">Home</a>
-                    <a href="contacts.html">Contact</a>
+                    <Link to="/">Home</Link>
+                    <Link to="/contact">Contact</Link>
                 </nav>
                 <h1>Let's Connect</h1>
             </div>

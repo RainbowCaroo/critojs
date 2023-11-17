@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink, Link } from 'react-router-dom'
 import CritoLogo from '@images/logotype.svg'
 
 const Header = () => {
@@ -7,9 +8,9 @@ const Header = () => {
         <div className="container">
             <button className="btn-menubars"><i className="fa-solid fa-bars-staggered"></i></button>
             <div className="logotype">
-                <a href="index.html">
+                <Link to="/">
                     <img src={CritoLogo} alt="crito logotype" />
-                </a>
+                </Link>
             </div>
             <div className="contactinfo-bar">
                     <div className="content-box">
@@ -26,19 +27,19 @@ const Header = () => {
                     </div>
             </div>
             <div className="socialmedia-bar">
-                <a href="#" target="_blank"><i className="fa-brands fa-facebook"></i></a>
-                <a href="#" target="_blank"><i className="fa-brands fa-x-twitter"></i></a>
-                <a href="#" target="_blank"><i className="fa-brands fa-instagram"></i></a>
-                <a href="#" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i className="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i className="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i className="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
             </div>
             <div className="mainmenu">
                 <nav>
-                    <a className="active" href="index.html">Home</a>
-                    <a href="service.html">Service</a>
-                    <a href="news.html">News</a>
-                    <a href="contacts.html">Contact</a>
+                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/service">Service</NavLink>
+                    <NavLink to="/news">News</NavLink>
+                    <NavLink to="/contact">Contact</NavLink>
                 </nav>
-                    <a className="btn-yellow btn-login " href="login.html">Login <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <Link className="btn-yellow btn-login " to="/login">Login <i className="fa-solid fa-arrow-up-right-from-square"></i></Link>
             </div>
         </div>
     </header>

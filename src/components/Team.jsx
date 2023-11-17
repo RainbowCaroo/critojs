@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Kristine from '@images/kristine-palmer.png'
 import Mark from '@images/mark-aubri.png'
 import Kimberly from '@images/kimberly-hansen.png'
@@ -14,7 +15,7 @@ const Team = () => {
                     <p>Meet Our Team</p>
                     <h2>Experience Team Members</h2>
                 </div>
-                <a className="btn-transparent" href="team.html">Browse Team <i className="fa-solid fa-arrow-up-right-from-square"></i></a>                        
+                <Link className="btn-transparent" to="/teams">Browse Team <i className="fa-solid fa-arrow-up-right-from-square"></i></Link>                        
             </div>
             <div className="meet-our-team">
                 <div className="team-members">
