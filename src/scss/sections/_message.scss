@@ -1,0 +1,48 @@
+.leave-message {
+
+    .container {
+        display: flex;
+        background-color: #F0EFE9;
+        padding: 80px;
+        padding-left: 120px;
+        padding-right: 120px;
+        margin-bottom: 100px;
+
+
+        h1 {
+            text-align: center;
+            font-weight: 600;
+            font-size: 45px;
+            margin-bottom: 30px;
+
+            @media (min-width: 1200px) {
+                padding-left: 200px;
+                padding-right: 200px;
+            }
+
+            @media (min-width: 1400px) {
+                padding-left: 300px;
+                padding-right: 300px;
+            }
+        }
+
+        .form-input {
+            display: block;
+            border: none;
+            border-radius: 30px;
+            padding: 20px;
+            padding-left: 30px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        textarea {
+            resize: none;
+            height: 160px;
+        }
+
+        .btn-yellow {
+            margin: 30px 0;
+        }
+    }
+}
