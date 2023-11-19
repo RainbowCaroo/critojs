@@ -10,7 +10,6 @@ const Message = () => {
     const [thanksMessage, setThanksMessage] = useState('')
     const [errorMessage, setErrorMessage] = useState('')
 
-    // namn och message blir röda från början och vet inte hur jag får bort detta
 
     const handleChange = (e) => {
         switch (e.target.name) {
@@ -43,26 +42,12 @@ const Message = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+        setThanksMessage('')
         setErrorMessage('')
 
-        for(let  element of e.target) {
-            switch (element.name) {
-                case 'name':
-                    setName(element.value)
-                    setNameError(validateLength(element.value))
-                    break
-                case 'email':
-                    setEmail(element.value)
-                    setEmailError(validateEmail(element.value))
-                    break
-                case 'message':
-                    setMessage(element.value)
-                    setMessageError(validateLength(element.value))
-                    break
-            }
-        }
+ 
 
-        if (!nameError && !emailError && !messageError) {
+
             const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
                 method: 'post',
                 headers: {
@@ -73,17 +58,15 @@ const Message = () => {
                 })
             })
 
-            // Lyckas inte få upp dessa meddelanden av någon anledning och vet inte riktigt varför,
-            // samt att clear inte funkar
-            // Allt funkade när jag hade de som switch innan, testade byta tillbaka till switch men det funkade inte heller
-
-            if (result.status === 200) {
-                clearForm()
-                setThanksMessage('Thanks for your message! ')
+            switch (result.status) {
+                case 200: {
+                    clearForm()
+                    setThanksMessage('Thanks for your message! ')
+                    break
+                }
             }
-            else
-                setErrorMessage('You need to fill everything out')
-        }
+
+        
         
     }
 
