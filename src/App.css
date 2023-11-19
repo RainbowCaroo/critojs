@@ -1030,6 +1030,20 @@ header .container .mainmenu .btn-login {
   resize: none;
   height: 160px;
 }
+.leave-message .container .error {
+  color: rgb(163, 24, 24);
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+.leave-message .container .errorMessage {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(163, 24, 24);
+}
+.leave-message .container .thanksMessage {
+  text-align: center;
+  font-size: 1.5rem;
+}
 .leave-message .container .btn-yellow {
   margin: 30px 0;
 }
